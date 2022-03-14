@@ -1,13 +1,84 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url("images/4.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.wrapper{
+  overflow-x: hidden;
+  overflow-y: auto;    
+}
+
+.wrapper h1{
+  margin-top: 30px;
+  text-align: center;
+  color: #fff;
+}
+
+.wrapper p{
+  text-align: center;
+  margin-top: 7px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.wrapper .main{
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.wrapper .form-container{
+  width: 500px;
+  height: 400px;
+  background-color: #e6bc8d;
+  margin: 10px auto;
+  padding: 20px;   
+}
+
+.wrapper .form-container .btn{
+  width: 100%;  
+  background-color: #000; 
+}
+
+.wrapper .form-container .btn:hover{
+  background-color: #0e661d;
+  transition: 1s;  
+}
+
+.wrapper .view-container{
+  width: 600px;    
+  background-color: #ece3e3;
+  margin: 20px auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper .view-container thead{
+  color: chocolate;
+}
+
+.deletebtn{
+  margin-top: 10px;
+  color: #000;
+  cursor: pointer;
+}
+
+.deletebtn:hover{
+  background-color: red;
+  transition: 1s;
+}
+
+
+tbody{
+  margin-top: 25px;
 }
